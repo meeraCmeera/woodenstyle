@@ -1,0 +1,395 @@
+<html><head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ <style>
+    
+  nav{
+    background-color: gray;
+  }
+  .container-fluid{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .nav-link{
+    position: relative;left: 800px;
+  }
+  .d-flex{
+    position: relative;right: 750px;
+    position: relative;top: 10px;
+    width: 400px;
+  }
+  h1{
+    font-size: 22px;
+  padding: 10px;
+}
+.register{
+  width: 700px;
+  margin: 250px auto;
+  padding: 10px 20px 30px;
+  background-color: darkgray;
+  color: black;
+  position: relative;
+  bottom: 160px;
+  border-radius: 20px;
+}
+  footer{
+    background-color: gray;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+  }
+  .footer-content{
+    display: inline-block;
+    list-style-type: none;
+    text-align: justify;
+    margin-right: 100px;
+    
+  }
+
+
+  .mb-3{
+        width: 200px;
+    }
+    .form{
+         width: 650px; 
+         height: 580px;
+       
+         /* padding: 1px 20px 30px;  */
+        background-color: darkgray;
+        /* color: white; */
+        position: relative;
+        left: 400px;
+        top: 10px;
+        border-radius: 20px;
+        
+    }
+    .forget{
+        text-decoration-line: underline;
+        color: blue;
+    }
+    .forget3{
+        position: relative;
+        left: 170px;
+        bottom: 25px;
+
+    }
+
+
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-light primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Wooden Styles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="sea images/Downloads - Copy/icons8-home-50.png" style="height: 20px; width: 20px;position: relative;bottom: 3px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><img src="sea images/Downloads - Copy/icons8-user-48.png" style="height: 20px; width: 20px;position: relative;bottom: 3px;" >Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  active" href="wishlist.html"><img src="sea images/icons8-heart-50.png" style="height: 20px; width: 20px; position: relative;bottom: 3px;">
+              Whishlist
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cart.html"><img src="sea images/Downloads - Copy/icons8-cart-50.png" style="height: 20px;width: 20px;position: relative;bottom: 3px;">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav><br><br>
+    
+
+
+
+
+    
+
+
+
+
+<body>
+
+    <center><h2 style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ACCOUNT</h2></center><br><br>
+    <center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Create an Account</h3></center>
+    <center><p style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sign up and get 38 days free trial</p></center>
+    
+  
+
+
+    <div class="form">
+    <div class="container mt-5">
+        <h2 style="position: relative;left: 150px; font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Login With Your Username</h2>
+        <form id="signupForm" novalidate>
+            <!-- Name field -->
+            <div class="mb-3">
+                <label for="name" class="form-label" style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required style="border-radius: 20px;">
+                <div class="invalid-feedback">
+                    Name is required.
+                </div>
+            </div>
+
+            <!-- Email field -->
+            <div class="mb-3">
+                <label for="email" class="form-label" style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required style="border-radius: 20px;">
+                <div class="invalid-feedback">
+                    Please provide a valid email.
+                </div>
+            </div>
+
+            <!-- Password field -->
+            <div class="mb-3">
+                <label for="password" class="form-label" style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required minlength="6" style="border-radius: 20px;">
+                <div class="invalid-feedback">
+                    Password must be at least 6 characters long.
+                </div>
+            </div>
+
+            <!-- Confirm Password field -->
+            <div class="mb-3">
+                <label for="confirm_password" class="form-label"style="font-weight: bold;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" placeholder="Confirm your password" required style="border-radius: 20px;">
+                <div class="invalid-feedback">
+                    Passwords must match.
+                </div><br>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary" style="width: 130px; position: relative;left: 40px; background-color: black; border-radius: 10px;">Login</button><br><br>
+
+
+
+
+
+
+
+
+             <div class="forget"><a href="forget.html">Forget your password?</a></div><br>
+            <div class="forget1">Don't have an account?</div>
+             <a href="register.html"> <div class="forget3" style="color: blue" > Register here</div></a>
+
+        </form>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+     <a id="myAnchor" href="home.html"></a> 
+
+    <script>
+        // Get form elements
+        const form = document.getElementById('signupForm');
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const passwordField = document.getElementById('password');
+        const confirmPasswordField = document.getElementById('confirm_password');
+
+        // Validate Name
+        nameField.addEventListener('input', function() {
+            if (nameField.value.trim() === '') {
+                nameField.classList.add('is-invalid');
+                nameField.classList.remove('is-valid');
+            } else {
+                nameField.classList.remove('is-invalid');
+                nameField.classList.add('is-valid');
+            }
+        });
+
+        // Validate Email
+        emailField.addEventListener('input', function() {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(emailField.value.trim())) {
+                emailField.classList.add('is-invalid');
+                emailField.classList.remove('is-valid');
+            } else {
+                emailField.classList.remove('is-invalid');
+                emailField.classList.add('is-valid');
+            }
+        });
+
+        // Validate Password
+        passwordField.addEventListener('input', function() {
+            if (passwordField.value.length < 6) {
+                passwordField.classList.add('is-invalid');
+                passwordField.classList.remove('is-valid');
+            } else {
+                passwordField.classList.remove('is-invalid');
+                passwordField.classList.add('is-valid');
+            }
+        });
+
+        // Validate Confirm Password
+        confirmPasswordField.addEventListener('input', function() {
+            if (confirmPasswordField.value !== passwordField.value) {
+                confirmPasswordField.classList.add('is-invalid');
+                confirmPasswordField.classList.remove('is-valid');
+            } else {
+                confirmPasswordField.classList.remove('is-invalid');
+                confirmPasswordField.classList.add('is-valid');
+            }
+        });
+
+        // Handle Form Submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission
+
+            // Check if all fields are valid before submitting
+            if (form.checkValidity()) {
+
+                alert('Form submitted successfully!');
+
+                // Optionally, you could update the anchor's href before redirecting
+                const anchor = document.getElementById('myAnchor');
+                anchor.href = "home.html";  // Set this to the URL of the next page
+                
+                // Optionally, change the anchor text
+                anchor.innerText = "Click here to go to the next page";
+
+                // Redirect to the next page automatically (optional)
+                window.location.href = anchor.href;  // This will navigate to "nextpage.html"
+
+                // Reset the form fields
+                form.reset();
+
+            } else {
+                 alert('Please fill in all fields correctly.');
+            }
+        });
+
+
+        
+
+
+
+    </script><br><br><br><br><br>
+
+
+
+<footer>
+    <div class="footer-content">
+      <h1>The Company</h1>
+      <li>About Us</li>
+      <li>Help</li>
+      <li>Blog</li>
+      <li>Inside UL</li>  
+      <li>Careers</li>
+      <li>Press</li>
+      <li>Team</li>
+      <li>Privacy Policy</li>
+    </div>
+    <div class="footer-content">
+      <h1>More Information</h1>
+      <li>Fees and payment</li>
+      <li>Shipping & Delivery</li>
+      <li>Terms and Conditons</li>
+      <li>Warrenty</li>
+      <li>Return and Refund</li>
+      <li>Contact Us</li>
+      <li>Visit Us</li>
+      <li>Buly In Bulk</li>
+    </div>
+    <div class="footer-content">
+      <h1>Explore More</h1>
+      <li>Refer</li>
+      <li>Earn</li>
+    </div>
+    <div class="footer-content">
+      <h1>Address</h1>
+      <li>Reliance Retail Limited</li>
+      <li>5rd Floor,Dilak House,Perumal Nagar</li>
+      <li>Dhobi Dato,Selam-300 002 Madurai,</li>
+      <li>Thamil Nadu</li><br><br>
+      <li>CIN:H00TTMH0000PLC123456700</li>
+    </div><br><br><br><br>
+    <div>
+      <div><h1 style="position: relative;right: 670px;">Contact With Us:</h1></div>
+      <div><img src="egg/Downloads - Copy (2)/icons8-call-50.png" style="position: relative;right: 580px;"><img src="egg/Downloads - Copy (2)/icons8-envelope-dots-50.png" style="position: relative;right: 560px;"><img src="egg/Downloads - Copy (2)/icons8-facebook-50.png" style="position: relative;right: 540px;"><img src="egg/Downloads - Copy (2)/icons8-twitter-50.png" style="position: relative;right: 520px;"><img src="egg/Downloads - Copy (2)/icons8-p-50.png" style="position: relative;right: 500px;"><img src="egg/Downloads - Copy (2)/icons8-in-50.png" style="position: relative;right: 480px;"></div>
+    </div>
+    <div>
+      <div><h1 style="margin-left: 820px; position: relative;bottom: 80px;">Download App:</h1></div>
+      <div><img src="egg/app logo.png" style="height: 50px;width: 100px; margin-left: 800px;position: relative;bottom: 80px;"><img src="egg/app2logo.png" style="height: 50px; width: 100px;position: relative;bottom: 80px;"></div>
+    </div>
+
+  </footer>
+  
+
+  
+
+        
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+          
+    <!-- <footer>
+        <div class="footer">
+        
+        <div class="foo">
+          <h3>Link</h3>
+          <p>Home</p>
+          <p>Categoris</p>
+          <p>Order Again</p>
+          <p>Basket</p>
+        </div>
+        <div class="foo">
+          <h3>Get Help</h3>
+          <p>FAQs</p>
+          <p>Terms&Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Logout</p> -->
+           <!-- <div>
+        <div class="foo">
+          <h3>Payment Option</h3>
+          <p>Cash on Delivery</p>
+          <img src="image4/image4/icons8-paytm-50.png" height="70px"width="70px">
+         <img src="image4/image4/icons8-google-pay-64.png"  >
+          <img src="image4/image4/icons8-rupay-48.png"height="70px"width="70px">
+        </div>
+        <div class="foo">
+          <h3>Contact Us</h3>
+          <p>Keerthana.</p>
+          <p>Phone:7445667895</p>
+          <p>Gmail:mohankeerthan55@gmail.com</p>
+          </div>
+          </div>
+          <div >
+            <div style="display: flex;margin-left: 250px;" >
+           <h3 style="position: relative;left: 120px;">Follow us</h3>
+           <p><img src="image4/image4/icons8-facebook-48.png" style="position: relative;left: 120px;"></p>
+           <p><img src="image4/image4/icons8-whatsapp-48.png" style="position: relative;left: 120px;"></p>
+           <p><img src="image4/image4/icons8-instagram-48.png" style="position: relative;left: 120px;"></p>
+           <p><img src="image4/image4/icons8-youtube-48.png" style="position: relative;left: 120px;"></p> -->
+          <!-- </div>
+          </div>
+      
+          <div class="horizontal-line"></div>
+            
+            <h7 style="position: relative;left: 40%;"><img src="image4/image4/icons8-beautician-64.png" height="40px"width="40px">2018 Beautician. All right reserved</h7>
+            </div>  
+          </footer>   -->
+        </body>
+        </html>

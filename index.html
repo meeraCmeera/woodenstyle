@@ -1,0 +1,853 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<style>
+  nav{
+    background-color: gray;
+  }
+  .container-fluid{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .nav-link{
+    position: relative;left: 800px;
+  }
+  .d-flex{
+    position: relative;right: 750px;
+    position: relative;top: 10px;
+    width: 400px;
+  }
+  
+  h1{
+    font-size: 22px;
+  padding: 10px;
+}
+
+.card{
+    margin: 45px;
+}
+  .f1 a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 6px;
+  }
+  footer{
+    background-color: gray;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+  }
+  .footer-content{
+    display: inline-block;
+    list-style-type: none;
+    text-align: justify;
+    margin-right: 100px;
+    
+  }
+  button{
+    border-radius: 15px;
+    border-style: none;
+    color: aliceblue;
+  }
+  
+  button:hover{
+    background-color: darkgrey;
+  }
+
+  .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            position: relative;
+            left: 4px;
+            top: 2px;
+        }
+
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-light primary navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Wooden Styles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><img src="sea images/Downloads - Copy/icons8-home-50.png" style="height: 20px; width: 20px;position: relative;bottom: 3px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="account1.html"><img src="sea images/Downloads - Copy/icons8-user-48.png" style="height: 20px; width: 20px;position: relative;bottom: 3px;" >Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  active" href="wishlist.html"><img src="sea images/icons8-heart-50.png" style="height: 20px; width: 20px; position: relative;bottom: 3px;">
+              Whishlist
+            </a>
+            
+          </li>
+          <li class="nav-item position:relative" >
+            <a class="nav-link active" href="#"><img src="sea images/Downloads - Copy/icons8-cart-50.png" style="height: 20px;width: 20px;position: relative;bottom: 3px;">Cart<span id="cart-count" class="cart-badge">0</span></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav><br><br><br>
+
+  <div class="f1">
+  <a href="jspsofa.html" >Sofas</a>
+  <a href="bed.html" >Beds</a>
+  <a href="dining table.html" >Dining</a>
+  <a href="wardrobe.html" >Wardrobes</a>
+  <a href="shoes.html" >Shoe Rackes</a>
+  <a href="bookshelves.html" >Bookshelves</a>
+  <a href="tv.html" >TV Unites</a>
+  <a href="decor.html" >Decor</a>
+  <a href="recliners.html" >Recliners</a>
+  <a href="seating.html" >Seating</a>
+  <a href="coffeetable.html" >Coffee Table</a>
+  <a href="study.html" >Study</a>
+  <a href="side table.html" >Side Tables</a>
+  <a href="seating.html" >Bench</a>
+  <a href="desk.html" >Desk</a>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="sea images/furniture1.jpg" height="400px" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="sea images/furniture2.jpg" height="400px" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src=" sea images/furniture3.webp" height="400px" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+
+  <center><h2>Explore Our Furniture Range</h2></center><br>
+  <div class="circle" style="display: flex;">
+    <div class="round" style="padding: 15px;">
+     
+    
+      <a href=""><img src="sea images/funiture17.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 250px;"></a>
+      <center><h5 style="margin-left: 250px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px">New Arrivals</h5></center>
+    </div>
+    
+    <div class="round" style="padding: 15px;">
+      <a href="jspsofa.html"><img src="sea images/furniture4.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Sofas</h5></center>
+    </div>
+    
+    <div class="round" style="padding: 15px;">
+      <a href="bed.html"><img src="sea images/funiture5.avif" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Beds</h5></center>
+    </div>
+    
+    <div class="round" style="padding: 15px;">
+      <a href="dining table.html"><img src="sea images/furniture6.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Dining</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="wardrobe.html"><img src="sea images/furniture7.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Wardrobes</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="shoes.html"><img src="sea images/furniture8.webp" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Shoes Rackes</h5></center>
+    </div>
+    </div>
+    <div class="circle" style="display: flex;">
+    <div class="round" style="padding: 15px;">
+      <a href="bookshelves.html"><img src="sea images/furniture9.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 250px;"></a>
+      <center><h5 style="margin-left: 250px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Bookshelves</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="tv.html"><img src="sea images/furniture10.webp" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">TV units</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="decor.html"><img src="sea images/furniture11.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Decor</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="recliners.html"><img src="sea images/furniture12.webp" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Recliners</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="seating.html"><img src="sea images/furniture13.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Seating</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="coffeetable.html"><img src="sea images/funiture14.avif" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Coffee Tables</h5></center>
+    </div>
+    </div>
+    <div class="circle" style="display: flex;">  
+    <div class="round" style="padding: 15px;">
+      <a href="side table.html"><img src="sea images/furniture15.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 250px;"></a>
+      <center><h5 style="margin-left: 250px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Side Table</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="stool.html"><img src="sea images/furniture22.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Stool</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="seating.html"><img src="sea images/furniture19.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Bench</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="desk.html"><img src="sea images/furniture20.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Desk</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href="study.html"><img src="sea images/furniture21.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Study</h5></center>
+    </div>
+    <div class="round" style="padding: 15px;">
+      <a href=""><img src="sea images/funiture18.jpg" alt=""  height="100px" width="100px" class="rounded-circle" style="margin-left: 50px;"></a>
+      <center><h5 style="margin-left: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Discount</h5></center>
+    </div>
+    </div><br><br>
+    <center><h3>Introducing Wooden Styles</h3></center><br><br>
+    <center><p style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Presenting our new collection,Wooden style-an experience thats truly exceptional.From delicate weaves to bold designs,each piece invites you to savour the beauty around you.</p></center><br>
+    <center><p style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bring home pieces that take you to another world of extraordinary</p></center><br><br>
+    <center><button style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: chocolate;"><a href="explore.html" style="text-decoration: none; color: aliceblue;">Explore Now</a></button></center><br><br>
+    <div><img src="sea images/furniture24.jpg" style="margin-left: 400px; height: 450px; width: 700px;"></div><br><br>
+    <center><h4 style="font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our Bestsellers,Handpicked Just For You</h4></center><br>
+
+    <div  style="display: flex;">
+      <div><img src="sea images/furniture25.jpg" alt="" height="250px" width="450px" style="margin-left: 300px;"></div>
+      <div><img src="sea images/furniture26.jpg" alt="" height="250px" width="450px" style="margin-left: 30px;"></div>
+    </div><br>  
+    <div  style="display: flex;">
+      <div><img src="sea images/furniture27.jpg" alt="" height="250px" width="450px" style="margin-left: 300px;"></div>
+      <div><img src="sea images/furniture28.jpg" alt="" height="250px" width="450px" style="margin-left: 30px;"></div>
+    </div><br>
+    <center><h3 style="font-size: 35px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Presenting Mia</h3></center><br>
+    <center><p style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">TURN YOUR LIVING ROOM INTO A STYLE STATEMENT</p></center><br>
+    <center><p style="font-size: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mia,with its alluring curvaceous form and sheltering nook,is a conversation waiting to happen.This statement sofa is based on biophilic design principles,blending the natural flow of organic with the sophistication of modern luxury.</p></center><br>
+    <center><button style="font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: chocolate;"><a href="explore.html" style="text-decoration: none;color: aliceblue;">Explore Now</a></button></center></a><br>
+    <div><img src="sea images/furniture29.jpg" alt="" height="400px" width="1130px" style="margin-left: 200px;"></div><br>
+    <center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Premium Products At Steal Prices!</h3></center>
+    <center><p style="font-size: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Explore our curates selection of premium products,now available at exceptional steal prices for a touch of luxury in your home</p></center><br>
+      <div><img src="sea images/furniture30.jpg" alt="" height="400px" width="1150px" style="margin-left: 150px;"></div><br>
+    <center><button style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: chocolate;">Shop Now</button></center><br>
+      <div style="display: flex;">
+        <div><img src="sea images/furniture31.jpg" style="margin-left: 150px; height: 400px; width: 575px;"></div><br>
+        <div><img src="sea images/furniture32.jpg" style="height: 400px; width: 575px;"></div><br>
+      </div><br>
+    <center><h3 style="font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop The Full Look</h3></center><br>
+    <div><img src="sea images/furniture33.jpg" alt="" height="400" width="1220px" style="margin-left: 150px;"></div><br>
+    <center><button style="font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: chocolate;"><a href="explore.html" style="text-decoration: none;color: aliceblue;">Explore Now</a></button></center><br>
+    <div style="display: flex;"> 
+    <div><img src="sea images/furniture34.jpg" alt="" height="400px" width="400px" style="margin-left: 150px;">
+    <div><center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">BRIE SOFA</h3></center>
+    <center><button style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: chocolate;"><a href="explore.html" style="text-decoration: none;color: aliceblue;">Explore Now</a></button></center>
+    </div>
+    </div>
+    <div><img src="sea images/furniture35.webp" alt="" height="400px" width="400px" style="margin-left: 10px;">
+    <div><center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MIA SOFA</h3></center>
+    <center><button style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: chocolate;"><a href="explore.html" style="text-decoration: none;color: aliceblue;">Explore Now</a></button></center>
+    </div>
+    </div>
+    <div><img src="sea images/furniture36.jpg" alt="" height="400px" width="400px" style="margin-left: 10px;">
+    <div><center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">GREETA SOFA</h3></center>
+    <center><button style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: chocolate;"><a href="explore.html" style="text-decoration: none; color: aliceblue;">Explore Now</a></button></center>
+    </div>
+    </div>
+    </div><br>
+    <div><center><h3 style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">New Arrivals</h3></center></div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/city interior dt6.jpeg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">City Interior</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="1">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-12 col-md-3">
+            
+      <div class="card" style="width: 18rem;">
+        <img src="egg/diamond cut dt1.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diamond Cut</h5>
+          <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+          
+          <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SHop Now</a>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="2">Add To Cart</p></a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+            
+      <div class="card" style="width: 18rem;">
+        <img src="egg/city interior dt6.jpeg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">City Interior</h5>
+          <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Solid Sheesham Wood Six Seater Dining Set with 6 Chairs Mohagany Finish</p>
+          <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="3">Add To Cart</p></a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+                
+      <div class="card" style="width: 18rem;">
+        <img src="egg/8seater dt2.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;" >
+        <div class="card-body">
+          <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">8Seater Style Table</h5>
+          <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">wood affair Solid Sheesham Wood Diamond Cut Dining Table 6 Seater, Six Seater Dinning Table with 6</p>
+          
+          
+          <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="4">Add To Cart</p>></a>
+        </div>
+      </div>
+      </div>
+    
+        </div>
+        </div>
+      </div>
+
+       
+    
+    
+    
+    
+
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+            <img src="egg/glass wooden dt3.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Glass Wooden Table</h5>
+              <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+              
+              <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="5">Add To Cart</p></a>
+            </div>
+          </div>
+        </div>
+    
+
+        <div class="col-12 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="egg/6seater dt 4.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">6 Seater Style Table</h5>
+              <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+              <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="6">Add To Cart</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+            
+      <div class="card" style="width: 18rem;">
+        <img src="egg/4seater dt5.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">4 Seater Style Table</h5>
+          <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+          
+          <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="7">Add To Cart</p></a>
+        </div>
+      </div>
+    
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="egg/style wooden dt7.jpeg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Style Wood Table</h5>
+              <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+              
+              <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="8">Add To Cart</p></a>
+            </div>
+          </div>
+        </div>    
+        </div>
+      </div>
+    </div>
+      
+    
+    
+      
+    
+    
+    
+      
+    
+    
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="sea images/18 Wooden Bookshelf Designs Trending in 2023 4.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diamond Solid Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="9">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="sea images/30 Stylish Bookshelf Decor Ideas for 2024 12.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Solid Wood Table</h5>
+              <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+              
+              <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+               <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="10">Add To Cart</p></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="sea images/9 Beautiful Bookshelf Design Ideas • One Brick At A Time 11.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">LIZZA WOOD </h5>
+              <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+              <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Shop Now</a>
+              <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="11">Add To Cart</p></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-12 col-md-3">
+              
+      <div class="card" style="width: 18rem;">
+        <img src="sea images/Book Shelves Buy Custom Book Shelves Online 1.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;" >
+        <div class="card-body">
+          <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sona ART</h5>
+          <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+          <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+          <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="12">Add To Cart</p></a>
+        </div>
+      </div>
+      </div>
+
+          </div>
+        </div>
+      </div>
+    
+       
+    
+    
+    
+   
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="sea images/Carved Wooden Decor Trove Craft India 6.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">City Interior</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; height: 40px;"><p  class="add-to-cart" data-product="13">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="sea images/customized wooden wall decore racks and shelves 11.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diamond Cut</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+                
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SHop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="14">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="sea images/funiture14.avif" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">City Interior</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Solid Sheesham Wood Six Seater Dining Set with 6 Chairs Mohagany Finish</p>
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="15">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/10 Latest Wooden Wardrobe Designs With Pictures In 2023 2.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;" >
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">8Seater Style Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">wood affair Solid Sheesham Wood Diamond Cut Dining Table 6 Seater, Six Seater Dinning Table with 6</p>
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="16">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+            
+
+       
+    
+     
+    
+    
+
+    
+    
+    
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/3 Tier Rolling Door Wooden Shoe Rack , waseeh.com 12.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Glass Wooden Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+                
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="17">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/4seater dt5.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">6 Seater Style Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+                
+                
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="18">Add To Cart</p></a>
+              </div>
+            </div><br><br>
+          </div>
+
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/Amazon.in Low Tv Cabinet 6.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">4 Seater Style Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+                
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="19">Add To Cart</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/bed10.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Style Wood Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with</p>
+                
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="20">Add To Cart</p></a>
+              </div>
+            </div>
+            </div><br><br>
+          </div>
+        </div>
+      </div>
+    
+       
+    
+    
+     
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="egg/bed11.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+              <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Diamond Solid Table</h5>
+                <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+      
+                <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="21">Add To Cart</p></a>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="egg/bed3.jpg" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Solid Wood Table</h5>
+                  <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sheesham Wood Wooden Dining Table with 6 Chairs | Home and Living Room (6 Seater 1, Teak Finish)</p>
+                  
+                  <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="22">Add To Cart</p></a>
+                </div>
+              </div><br><br><br>
+            </div>
+
+
+            <div class="col-12 col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="egg/bed12.png" class="card-img-top" alt="..." style="height: 280px; width: 280px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">LIZZA WOOD </h5>
+                  <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+                  <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"></p>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Shop Now</a>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;height: 40px;"><p  class="add-to-cart" data-product="23">Add To Cart</p></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-3">
+              <div class="card" style="width: 18rem;">
+                <img src="egg/Blair 6-Door Wardrobe 8.webp" class="card-img-top" alt="..." style="height: 280px; width: 280px;" >
+                <div class="card-body">
+                  <h5 class="card-title" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sona ART</h5>
+                  <p class="card-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Buy TOUCHH WOOD Solid Sheesham Wood Dining Table 6 Seater | Wooden Six Seater Dinning Table with.</p>
+                  <p class="card-text"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-50.png" alt="" height="20px" width="20px"><img src="egg/icons8-star-half-empty-50.png" alt="" height="20px" width="20px"></p>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shop Now</a>
+                  <a href="#" class="btn btn-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;height: 40px;"><p  class="add-to-cart" data-product="24">Add To Cart</p></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+    
+          
+          
+          
+           
+          
+          
+          
+           
+          
+          
+           
+    
+       
+      </div><br><br><br><br>
+
+      <center><h2>Visit Our Stores</h2></center><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="circle">
+              <div class="round" style="padding: 15px;">
+                <center>
+               <a href="Google Map.com" ><img src="sea images/furniture45.jpg" alt=""  height="300px" width="300px" class="rounded-circle"></a>    
+                <h5 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px">Bengalore</h5>
+                <h5 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 15px;">3 stores</h5>
+                 </center>
+              </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="round" style="padding: 15px;">
+              <a href="Google Map.com"><img src="sea images/furniture46.jpg" alt=""  height="300px" width="300px" class="rounded-circle" style="margin-left: 50px;"></a>
+              <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Kochi&Kerala</h5></center>
+              <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 15px;">4 stores</h5></center>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="round" style="padding: 15px;">
+              <a href="Google Map.com"><img src="sea images/furniture47.jpg" alt=""  height="300px" width="300px" class="rounded-circle" style="margin-left: 50px;"></a>
+              <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;">Mumbai</h5></center>
+              <center><h5 style="margin-left: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 15px;">5 stores</h5></center>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+          
+ 
+
+    
+    
+    
+   
+  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cart counter variable
+        let cartCount = 0;
+    
+        // Function to update the cart count on the navbar
+        function updateCartCount() {
+            const cartBadge = document.getElementById('cart-count');
+            cartBadge.textContent = cartCount;
+        }
+    
+        // Event listener for 'Add to Cart' buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                cartCount++;
+                updateCartCount();
+            });
+        });
+    </script>
+
+
+<footer>
+    <div class="footer-content">
+      <h1>The Company</h1>
+      <li>About Us</li>
+      <li>Help</li>
+      <li>Blog</li>
+      <li>Inside UL</li>
+      <li>Careers</li>
+      <li>Press</li>
+      <li>Team</li>
+      <li>Privacy Policy</li>
+    </div>
+    <div class="footer-content">
+      <h1>More Information</h1>
+      <li>Fees and payment</li>
+      <li>Shipping & Delivery</li>
+      <li>Terms and Conditons</li>
+      <li>Warrenty</li>
+      <li>Return and Refund</li>
+      <li>Contact Us</li>
+      <li>Visit Us</li>
+      <li>Buly In Bulk</li>
+    </div>
+    <div class="footer-content">
+      <h1>Explore More</h1>
+      <li>Refer</li>
+      <li>Earn</li>
+    </div>
+    <div class="footer-content">
+      <h1>Address</h1>
+      <li>Reliance Retail Limited</li>
+      <li>5rd Floor,Dilak House,Perumal Nagar</li>
+      <li>Dhobi Dato,Selam-300 002 Madurai,</li>
+      <li>Thamil Nadu</li><br><br>
+      <li>CIN:H00TTMH0000PLC123456700</li>
+    </div><br><br><br><br>
+    <div>
+      <div><h1 style="position: relative;right: 670px;">Contact With Us:</h1></div>
+      <div><img src="egg/Downloads - Copy (2)/icons8-call-50.png" style="position: relative;right: 580px;"><img src="egg/Downloads - Copy (2)/icons8-envelope-dots-50.png" style="position: relative;right: 560px;"><img src="egg/Downloads - Copy (2)/icons8-facebook-50.png" style="position: relative;right: 540px;"><img src="egg/Downloads - Copy (2)/icons8-twitter-50.png" style="position: relative;right: 520px;"><img src="egg/Downloads - Copy (2)/icons8-p-50.png" style="position: relative;right: 500px;"><img src="egg/Downloads - Copy (2)/icons8-in-50.png" style="position: relative;right: 480px;"></div>
+    </div>
+    <div>
+      <div><h1 style="margin-left: 820px; position: relative;bottom: 80px;">Download App:</h1></div>
+      <div><img src="egg/app logo.png" style="height: 50px;width: 100px; margin-left: 800px;position: relative;bottom: 80px;"><img src="egg/app2logo.png" style="height: 50px; width: 100px;position: relative;bottom: 80px;"></div>
+    </div>
+
+  </footer>
+  
+
+  
+
+        
+
